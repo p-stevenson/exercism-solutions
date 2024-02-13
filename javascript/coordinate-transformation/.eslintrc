@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": "@exercism/eslint-config-javascript",
+  "rules": {
+    "prefer-const": "off"
+  },
+  "env": {
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": [".meta/proof.ci.js", ".meta/exemplar.js", "*.spec.js"],
+      "excludedFiles": ["custom.spec.js"],
+      "extends": "@exercism/eslint-config-javascript/maintainers"
+    }
+  ]
+}
